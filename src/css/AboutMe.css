@@ -1,0 +1,23 @@
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.aboutMe p{
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 2vw 6vw;
+}
+
+@media (max-width: 600px){
+    .aboutMe{
+        padding-top: 3vh;
+    }
+
+    .aboutMe p{
+        font-size: 5vw;
+        text-align: center;
+    }
+}

@@ -1,0 +1,32 @@
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(65, 62, 62);
+    /* position: fixed; */
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footerContainer p {
+    color: white;
+    font-size: 2vw;
+}
+
+
+@media (min-width: 1024px) {
+    .footerContainer p span:hover {
+        color: rgb(18, 164, 222);
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    .footerContainer p {
+        font-size: 4vw;
+        text-align: center;
+    }
+}

@@ -1,0 +1,72 @@
+.nav {
+    background-color: rgb(65, 62, 62);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 1vw;
+}
+
+.navLogo {
+    color: rgb(18, 164, 222);
+    font-size: 4vw;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 6vw;
+}
+
+.nav .listIcon{
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    display: none;
+}
+
+.list li a{
+    color: #8FCFFE;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    padding: 5px 7px 5px 7px;
+    border-radius: 10px;
+    border: .1vw solid transparent;
+    text-decoration: none;
+}
+
+
+
+@media(min-width: 1024px){
+    .list li a:hover {
+        color: rgb(18, 164, 222);
+        border-color: rgb(18, 164, 222);
+    }
+
+    .navLogo {
+        cursor: pointer;
+    }
+
+    .list li a{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        padding: 0 4vw;
+    }
+
+    .navLogo {
+        font-size: 9vw;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .nav .listIcon{
+        display: block;
+        font-size: 9vw;
+    }
+}

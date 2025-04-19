@@ -1,0 +1,120 @@
+.homeContainer {
+    height: calc(100vh - 180px);
+    background-image: url('https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.homeContainer .blurrDiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: inline-flex;
+    position: relative;
+    top: 20%;
+    left: 8%;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1 span:hover {
+    color: rgb(18, 164, 222);
+}
+
+h3 span:hover {
+    color: rgb(18, 164, 222);
+}
+
+.homeContainer .blurrDiv h1 {
+    color: #8FCFFE;
+    font-size: 4.7vw;
+    font-weight: 500;
+}
+
+span{
+    margin-right: 20px;
+}
+
+.homeContainer .blurrDiv h3 {
+    color: #8FCFFE;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.homeContainer .blurrDiv button {
+    background-color: rgb(18, 164, 222);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1vw;
+    width: 15vw;
+    height: 7vh;
+}
+
+
+.homeContainer .blurrDiv .linkTag {
+    display: flex;
+    gap: 2vw;
+}
+
+.homeContainer .blurrDiv .linkTag span {
+    font-size: 2vw;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+@media(min-width: 1024px) {
+    .homeContainer .blurrDiv button:hover {
+        background-color: rgb(9, 82, 112);
+    }
+
+    .homeContainer .blurrDiv .linkTag span:hover {
+        color: rgb(18, 164, 222);
+    }
+
+    .homeContainer .blurrDiv button {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    .homeContainer {
+        background-image: url('https://images.unsplash.com/photo-1514241516423-6c0a5e031aa2?q=80&w=2304&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-position: center;
+    }
+
+
+    .content {
+        top: 25%;
+        left: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeContainer .blurrDiv h1 {
+        font-weight: bolder;
+        font-size: 9vw;
+    }
+
+    .homeContainer .blurrDiv h3 {
+        font-size: 5vw;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    .homeContainer .blurrDiv button {
+        font-size: 3vw;
+        width: 30vw;
+        height: 4vh;
+    }
+
+    .homeContainer .blurrDiv .linkTag span {
+        font-size: 5vw;
+    }
+}
