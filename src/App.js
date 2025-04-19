@@ -10,7 +10,7 @@ import Projects from './pages/Projects';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <NavigationBar />
         <Routes>
           <Route exact path='/about-page' element={<AboutPage />} />
