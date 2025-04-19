@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import './App.css';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -10,7 +10,7 @@ import Projects from './pages/Projects';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter >
         <NavigationBar />
         <Routes>
           <Route exact path='/about-page' element={<AboutPage />} />
@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/projects' element={<Projects />} />
           {/* <Route exact path='/resume' element={<Resume />} /> */}
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );
