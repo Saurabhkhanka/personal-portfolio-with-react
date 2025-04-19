@@ -14,7 +14,7 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route exact path='/about-page' element={<AboutPage />} />
-          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/*' element={<Home />} />
           <Route exact path='/projects' element={<Projects />} />
           {/* <Route exact path='/resume' element={<Resume />} /> */}
         </Routes>

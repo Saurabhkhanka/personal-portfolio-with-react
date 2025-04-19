@@ -22,7 +22,6 @@ function NavigationBar() {
     },
     {
       title: "Resume",
-      link: "/resume",
       id: 4
     }
   ])
