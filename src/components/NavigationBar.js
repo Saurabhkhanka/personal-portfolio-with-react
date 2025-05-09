@@ -4,7 +4,7 @@ import '../css/NavigationBar.css'
 import { useState } from 'react'
 function NavigationBar() {
   const[logo, setLogo] = useState("Saurabh")
-  const [navData, setVavData] = useState([
+  const [navData, setNavData] = useState([
     {
       title: "Home",
       link: "/home",
@@ -27,10 +27,10 @@ function NavigationBar() {
   ])
   return (
     <>
-      <div className="nav">
+      <div className='nav'>
         <h1 className="navLogo">{logo}</h1>
         <ul className='list'>
-          {navData.map((link)=>{return <li id={link.id}><Link to={link.link}>{link.title}</Link></li>})}
+          {navData.map((link)=>{return <li id={link.id} ><Link to={link.link}>{link.title}</Link></li>})}
         </ul>
         <div className='listIcon'><i class="ri-menu-3-line"></i></div>
       </div>
